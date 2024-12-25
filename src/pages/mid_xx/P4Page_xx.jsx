@@ -17,7 +17,7 @@ const P4Page_xx = () => {
         setMenu(data)
       } else {
         let { data, error } = await supabase
-          .from('menu_xx')
+          .from('menu_61')
           .select('*')
           .eq('category', category)
         console.log(`supabase menu ${category}`, data)
