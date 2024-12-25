@@ -12,7 +12,7 @@ const P4Page_xx = () => {
   const fetchMenuByCategoryFromSupabase = async () => {
     try {
       if (category === '') {
-        let { data, error } = await supabase.from('menu_xx').select('*')
+        let { data, error } = await supabase.from('menu_61').select('*')
         console.log(`supabase menu ${category}`, data)
         setMenu(data)
       } else {
